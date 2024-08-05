@@ -1,0 +1,82 @@
+/* style.css */
+
+#image-converter-form {
+    margin-top: 20px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#image-converter-form .form-group {
+    margin-bottom: 15px;
+}
+
+#image-converter-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+}
+
+#image-converter-form input[type="file"],
+#image-converter-form select,
+#image-converter-form input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#image-converter-form input[type="submit"] {
+    background: #0073aa;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#image-converter-form input[type="submit"]:hover {
+    background: #005177;
+}
+
+#conversion-result {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: #0073aa;
+}
+
+#conversion-result p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#conversion-result a {
+    color: #0073aa;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#conversion-result a:hover {
+    text-decoration: underline;
+}
+/* Center the charts container and make the charts smaller */
+.charts-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    gap: 20px; /* Space between charts */
+    margin-top: 20px; /* Space above the charts */
+}
+
+canvas {
+    border: 1px solid #ddd; /* Optional: Adds a border around the charts */
+    width: 600px !important; /* Set a fixed width */
+    height: 300px !important; /* Set a fixed height */
+}
